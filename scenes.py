@@ -168,7 +168,7 @@ class GameScene():
     def checkGameResults(self) -> None:
         if sprite.spritecollide(self.player, self.enemyShips, False) or self.lost >= self.maxLost:
             self.gameRunning = False
-            self.mainWindow.blit(self.loseText, (170, 200))
+            self.mainWindow.blit(self.loseText, (150, 200))
         if self.score >= self.goal:
             self.fixWin()
             self.gameRunning = False
