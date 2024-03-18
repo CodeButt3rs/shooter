@@ -87,7 +87,7 @@ class GameScene():
         self.enemyShips = sprite.Group()
         self.bullets = sprite.Group()
 
-        self.player = Player("media/images/spaceShip.png", 5, win_height - 100, 80, 100, 10)
+        self.player = Player("media/images/spaceShip.png", win_width // 2 - 40, win_height - 100, 80, 100, 10)
 
         display.set_caption("Shooter")
         self.mainWindow = display.set_mode((win_width, win_height))
